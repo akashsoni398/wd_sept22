@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n" crossorigin="anonymous">
+    <title>Music Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        #header {
+            background-color: black;
+            text-align: right;
+        }
+        #header>a  {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 13px;
+        }
+        #dropdown {
+            display: inline-block;
+        }
+        #dropdown button {
+            font-family: sans-serif;
+            background-color: darkgreen;
+            color: white;
+            border: none;
+            font-size: 20px;
+            padding: 5px 20px;
+            font-weight: bold;
+        }
+        #dropdown-content {
+            display: none;
+        }
+        #logo-section {
+            background-color: #fbc915;
+            position: relative;
+        }
+        img[src="assets/images/logo.gif"] {
+            height: 150px;
+            width: 150px;
+        }
+        #logo-section h1 {
+            position: absolute;
+            top: 10px;
+            left: 160px;
+            font-family: fantasy;
+            font-weight: normal;
+            font-size: 75px;
+        }
+        #logo-section p {
+            position: absolute;
+            top: 90px;
+            left: 160px;
+            font-size: 18.5px;
+        }
+        .right-align {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        #logo-section form {
+            margin-right: 40px;
+            margin-top: 55px;
+            display: flex;
+        }
+        #logo-section form input {
+            border: none;
+            height: 40px;
+            font-size: 15px;
+            padding: 15px;
+            border-radius: 30px 0px 0px 30px;
+        }
+        #logo-section form button {
+            border: none;
+            height: 40px;
+            border-radius: 0px 30px 30px 0px;
+            background-color: white;
+        }
+        #menubar {
+            position: relative;
+            width: 100%;
+            background-color: #333;
+        }
+        #menubar ul {
+            display: flex;
+            
+            align-items: center;
+            margin: 0px 40px;
+        }
+        #menubar ul li {
+            list-style-type: none;
+            display: block;
+            padding: 10px;
+        }
+        #menubar ul a {
+            color: white;
+            font-size: 20px;
+            white-space: nowrap;
+            text-decoration: none;
+            fon
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <a href="legal/pp.html">Privacy Policy</a>
+        <a href="legal/tnc.html">Terms and Conditiions</a>
+        <div id="dropdown">
+            <button>LOGIN</button>
+            <div id="dropdown-content">
+                <a href="authentication/login.html">Login into existing account</a>
+                <a href="authentication/register.html">Create a new account</a>
+            </div>
+        </div>
+    </div>
+    <div id="logo-section">
+        <div class="left-align">
+            <img src="assets/images/logo.gif" alt="MUSIC HUB"/>
+            <h1>MUSIC HUB</h1>
+            <p>------------------------------------------------<br>One stop shop for all your musical needs</p>
+        </div>
+        <div class="right-align">
+            <form action="search.html">
+                <input type="search" placeholder="start typing to search..."/>
+                <button><i class="bi bi-search" style="font-size:15px;padding: 15px;"></i></button>
+            </form>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-sm bg-danger">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <div id="menubar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recent.html">Recently Added</a></li>
+            <li><a href="fav.html">Favourites</a></li>
+            <li><a href="hits.html">New Hits</a></li>
+            <li><a href="playlists.html">Playlists</a></li>
+            <li><a href="about.html">About us</a></li>
+        </ul>
+    </div>
+    <div id="page-content">
+        <div id="jumbotron"></div>
+        <div id="song-cards"></div>
+        <div id="newsletter"></div>
+    </div>
+    <div id="footer">
+        <div id="company-info"></div>
+        <div id="legal-links"></div>
+        <p>Copyright of Akash Soni</p>
+    </div>
+</body>
+</html>
